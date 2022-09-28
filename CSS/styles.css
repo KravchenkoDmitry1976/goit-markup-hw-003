@@ -1,0 +1,47 @@
+body{
+font-family: 'Roboto', sans-serif;
+
+}
+.link-logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height:1,19;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+    
+}
+.logo-piece{
+    color: #2196F3;  
+}
+.header-list,
+.header-contacts,
+.address-list,
+.benefits-list,
+.activity-list,
+.team-list,
+.portfolio-list,
+.filter-list{
+    list-style-type: none;  
+}
+.header-link,
+.contacts-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+}
+.header-link:hover,
+.address-link:hover{
+color: #2196F3;
+}
+.address-link{
+font-size: 14px;
+line-height: 1,71px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+text-decoration: none;
+}
