@@ -1,19 +1,14 @@
+:root{
+    --primary-text-color:#000000;
+    --akcent-text-color: #2196F3;
+    --paragraph-text-color:#757575;
+    --alternative-text-color:#FFFFFF;
+    --backround-color:#FFFFFF;
+}
 body{
 font-family: 'Roboto', sans-serif;
-
-}
-.link-logo{
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height:1,19;
-    letter-spacing: 0.03em;
-    color: #000000;
-    text-decoration: none;
-    
-}
-.logo-piece{
-    color: #2196F3;  
+color:var(--primary-text-color);
+background-color:var(--backround-color);
 }
 .header-list,
 .header-contacts,
@@ -25,23 +20,177 @@ font-family: 'Roboto', sans-serif;
 .filter-list{
     list-style-type: none;  
 }
-.header-link,
+/*--header style-*/
+.link-logo{
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--akcent-text-color); 
+text-decoration: none;  
+}
+.logo-piece{
+color: var(--primary-text-color);  
+}
+.header-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+.header-link.current{
+    color:var(--akcent-text-color)
+}
 .contacts-link{
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color:var(--paragraph-text-color);
     text-decoration: none;
 }
+.mail-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--akcent-text-color);
+    text-decoration: none; 
+}
 .header-link:hover,
-.address-link:hover{
-color: #2196F3;
+.address-link:hover,
+.contacts-link:hover{
+    color:var(--akcent-text-color);
+}
+.header-link:focus,
+.address-link:focus,
+.contacts-link:focus{
+    color:var(--akcent-text-color);  
+}
+/*main style*/
+.hero{
+    background-color:#2F303A;  
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color:var(--alternative-text-color);
+}
+.hero-btn{
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color:var(--alternative-text-color);
+    background-color:var(--akcent-text-color)
+    
+}
+.hero-btn:hover,
+.hero-btn:focus{
+width: 216px;
+height: 50px;
+left: 692px;
+top: 430px
+}
+/*--benefits style*/
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.benefits-item{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+color:var(--primary-text-color);
+}
+.benefits-txt{
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color:var(--paragraph-text-color) ;
+}
+.activity-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em; 
+}
+.team{
+    background-color:#F5F4FA;
+}
+.team-member{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.team-txt{
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--paragraph-text-color);
+}
+.address{
+    font-style: normal;
 }
 .address-link{
 font-size: 14px;
-line-height: 1,71px;
+line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color:var(--alternative-text-color);
 text-decoration: none;
+}
+.footer{
+    background-color:#2F303A ;
+}
+.logo-piece-footer{
+    color:var(--alternative-text-color);
+}
+.filter-link{
+border: none;
+background-color:F5F4FA ;
+font-family:inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--primary-text-color)
+}
+.filter-link:hover,
+.filter-link:focus{
+    color:var(--alternative-text-color);
+    background-color:var(--akcent-text-color);
+}
+.portfolio-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em; 
+}
+.portfolio-txt{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--paragraph-text-color);
 }
