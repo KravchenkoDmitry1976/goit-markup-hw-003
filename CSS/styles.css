@@ -107,7 +107,7 @@ top: 430px
     clip-path: inset(50%);
     margin: -1px;
 }
-.benefits-item{
+.benefits-title{
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -115,7 +115,6 @@ letter-spacing: 0.03em;
 color:var(--primary-text-color);
 }
 .benefits-txt{
-font-weight: 400;
 line-height: 1.71;
 color:var(--paragraph-text-color) ;
 }
