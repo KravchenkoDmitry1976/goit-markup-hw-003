@@ -8,22 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
-<body>
+<body> 
+<div class="main-container">
    <header class="header">
-    <nav class="header-navigation">
+    <div class="container-nav">
+        <nav class="header-navigation">
         <a class="link-logo" href="/">Web<span class="logo-piece">Studio</span></a>
-    <ul class="header-list">
-        <li class="header-item"> <a class="header-link current" href="./index.html">Студія</a></li>
-        <li class="header-item"> <a class="header-link"  href="./portfolio.html">Портфоліо</a></li>
-        <li class="header-item"> <a class="header-link" href="#">Контакти</a></li>
-    </ul>
+        <ul class="header-list list">
+            <li class="header-item"> <a class="header-link current" href="./index.html">Студія</a></li>
+            <li class="header-item"> <a class="header-link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="header-item"> <a class="header-link" href="#">Контакти</a></li>
+        </ul>
     </nav>
-    <ul class="header-contacts">
-        <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <ul class="header-contacts list">
+         <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+         <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        
     </ul>
+    </div>
    </header> 
    <main class="main">
     <section class="hero">
@@ -31,8 +38,9 @@
         <button class="hero-btn" type="button">Замовити послугу</button>
     </section>
     <section class="benefits">
+        <div class="container-benefits">
         <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="benefits-list">
+        <ul class="benefits-list list ">
             <li class="benefits-item"><h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p class="benefits-txt">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
             <li class="benefits-item"><h3 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h3>
@@ -42,18 +50,22 @@
             <li class="benefits-item"><h3 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                 <p class="benefits-txt">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
         </ul>
+        </div>
     </section>
     <section class="activity">
+        <div class="container-activity">
         <h2 class="activity-title">Чим ми займаємося</h2>
-        <ul class="activity-list">
+        <ul class="activity-list list">
             <li class="activity-item"><img class="activity-img" src="./images/box(1).jpg" alt="Людина робить сируктуру сайту"></li>
             <li class="activity-item"><img class="activity-img" src="./images/box(2).jpg" alt="Людина оптимізує застосунок на комп'ютері"></li>
             <li class="activity-item"><img class="activity-img" src="./images/box(3).jpg" alt="Людина працює з кольорами на планшеті"></li>
         </ul>
+        </div>
     </section>
     <section class="team">
+        <div class="container-team">
         <h2 class="team-title">Наша команда</h2>
-        <ul class="team-list">
+        <ul class="team-list list">
             <li class="team-item"><img class="member-img" src="./images/igor_demyanenko.jpg" width="270" height="260"  alt="фото Ігор Дем'яненко">
                 <h3 class="team-member">Ігор Дем'яненко</h3>
                 <p class="team-txt" lang="en">Product Designer</p>
@@ -71,12 +83,14 @@
                 <p class="team-txt"  lang="en">UI Designer</p>
             </li>
         </ul>
+        </div>
     </section>
-   </main>
-   <footer class="footer">
+</main>
+    <footer class="footer">
+    <div class="container-footer">
     <a class="link-logo" href="/">Web<span class="logo-piece-footer">Studio</span></a>
     <address class="address">
-        <ul class="address-list">
+        <ul class="address-list list">
             <li class="address-item"><a class="address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
                 Українки, 26</a>
             </li>
@@ -84,6 +98,8 @@
             <li class="address-item"><a class="footer-link"  href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </address>
-   </footer>
+    </div>
+    </footer>
+</div>
 </body> 
 </html>
